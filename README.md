@@ -1,5 +1,5 @@
-# Convert2KML
-Convertidor de csv a KML personalizado
+# Convert CSV2KML
+Convertidor de csv a KML personalizado ( Programa ha sido elaborado en C++ )
 
 Requiere cumplir la estructura de 28 columnas de un archivo base generado CSV en QGIS, este deberá ser exportado y previamente se suprime la primera fila.
 
