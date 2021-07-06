@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ventanappal</class>
+ <widget class="QMainWindow" name="ventanappal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ventanappal</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tw_tabla">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>601</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Nueva columna</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>FID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Id_Proyecto</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cod_Elemento</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Responsable</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>TipoEstructura</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>FechaCaptura</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Diametro</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Ancho</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Altura</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Est_Conducto</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>EstCabezal</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Nueva columna</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cab_Salida</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Est_GuardaR</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>GuardaR_Ent</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Nueva columna</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>GuardaR_Sal</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Est_Aletas</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Aleta_Ent</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Aleta_Sal</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Observaciones</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Img_Entrada</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Nueva columna</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Img_Salida</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Latitud</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Longitud</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLineEdit" name="txt_puntos">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>360</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>360</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Total Puntos Fichero</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionLeer_archivo_2"/>
+    <addaction name="actionCerrar_app"/>
+    <addaction name="separator"/>
+    <addaction name="actionExportar_KML"/>
+    <addaction name="actionExportar_CSV"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLeer_archivo">
+   <property name="text">
+    <string>Leer archivo</string>
+   </property>
+  </action>
+  <action name="actionLeer_archivo_2">
+   <property name="text">
+    <string>Leer archivo...</string>
+   </property>
+  </action>
+  <action name="actionCerrar_app">
+   <property name="text">
+    <string>Cerrar app</string>
+   </property>
+  </action>
+  <action name="actionGuardar_como_KML">
+   <property name="text">
+    <string>Guardar como KML...</string>
+   </property>
+  </action>
+  <action name="actionExportar_KML">
+   <property name="text">
+    <string>Exportar KML...</string>
+   </property>
+  </action>
+  <action name="actionExportar_CSV">
+   <property name="text">
+    <string>Exportar CSV...</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
